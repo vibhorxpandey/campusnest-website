@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusNest | Verified Hostels, PGs & Flats Near College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="CampusNest home">
+      <span class="brand-mark">CN</span>
+      <span>CampusNest</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#listings">Listings</a>
+      <a href="#how">How it works</a>
+      <a href="#owners">For owners</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#student-form">Find a Room</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Verified rooms near your college</p>
+        <h1>Find hostels, PGs and flats without paying brokerage.</h1>
+        <p class="hero-copy">
+          Compare real prices, amenities, food, distance and room types. Students pay zero. Owners only pay after a successful booking.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#listings">Explore Rooms</a>
+          <a class="secondary-btn" href="#owners">List Property</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Marketplace highlights">
+      <div>
+        <strong>10,000+</strong>
+        <span>students on campus</span>
+      </div>
+      <div>
+        <strong>100+</strong>
+        <span>hostels and PGs</span>
+      </div>
+      <div>
+        <strong>0</strong>
+        <span>student commission</span>
+      </div>
+      <div>
+        <strong>24h</strong>
+        <span>lead follow-up</span>
+      </div>
+    </section>
+
+    <section class="section" id="listings">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Featured listings</p>
+          <h2>Browse verified stays</h2>
+        </div>
+        <p>Filter by type, budget and food to shortlist the right rooms before calling.</p>
+      </div>
+
+      <div class="filters" aria-label="Listing filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="hostel">Hostel</button>
+        <button class="filter" data-filter="pg">PG</button>
+        <button class="filter" data-filter="flat">Flat</button>
+        <select id="budgetFilter" aria-label="Filter by budget">
+          <option value="all">Any budget</option>
+          <option value="6000">Under Rs 6,000</option>
+          <option value="9000">Under Rs 9,000</option>
+          <option value="12000">Under Rs 12,000</option>
+        </select>
+      </div>
+
+      <div class="listing-grid" id="listingGrid"></div>
+    </section>
+
+    <section class="split-section" id="how">
+      <div class="section-heading compact">
+        <p class="eyebrow">Simple process</p>
+        <h2>How CampusNest works</h2>
+        <p>Students get clarity. Owners get serious leads. You control the final confirmation personally.</p>
+      </div>
+      <div class="steps">
+        <article>
+          <span>01</span>
+          <h3>Student shares preference</h3>
+          <p>Budget, room type, food choice, move-in date and phone number are collected in one clean form.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Options are matched</h3>
+          <p>Students compare verified photos, amenities, distance and pricing before contacting the owner.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Booking is confirmed</h3>
+          <p>You follow up with the student and owner, then charge the owner after successful conversion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section form-band" id="student-form">
+      <div class="form-copy">
+        <p class="eyebrow">For students</p>
+        <h2>Tell us what you need</h2>
+        <p>Submit your preference and we will call you with the best matching verified rooms near campus.</p>
+      </div>
+      <form class="lead-form" id="studentLeadForm">
+        <label>
+          Full name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone" placeholder="10-digit mobile number" required>
+        </label>
+        <label>
+          Monthly budget
+          <select name="budget" required>
+            <option value="">Select budget</option>
+            <option>Under Rs 5,000</option>
+            <option>Rs 5,000 - Rs 8,000</option>
+            <option>Rs 8,000 - Rs 12,000</option>
+            <option>Rs 12,000+</option>
+          </select>
+        </label>
+        <label>
+          Stay type
+          <select name="type" required>
+            <option value="">Select type</option>
+            <option>Hostel</option>
+            <option>PG</option>
+            <option>Flat</option>
+            <option>Any good option</option>
+          </select>
+        </label>
+        <label class="full">
+          Move-in timeline
+          <input type="text" name="timeline" placeholder="Example: within 2 weeks">
+        </label>
+        <button class="primary-btn full" type="submit">Get Matching Rooms</button>
+        <p class="form-message" id="studentMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="owner-section" id="owners">
+      <div class="owner-panel">
+        <p class="eyebrow">For hostel, PG and flat owners</p>
+        <h2>Fill vacant rooms faster with verified student leads.</h2>
+        <p>
+          Add photos, rent, facilities, food details and rules. We send students who match your property and only charge commission after they book.
+        </p>
+        <ul class="check-list">
+          <li>Verified student leads</li>
+          <li>No upfront listing fee</li>
+          <li>Lead tracking with referral codes</li>
+          <li>WhatsApp and phone follow-up</li>
+        </ul>
+      </div>
+      <form class="owner-form" id="ownerForm">
+        <label>
+          Property name
+          <input type="text" name="propertyName" placeholder="Example: Shanti Boys Hostel" required>
+        </label>
+        <label>
+          Owner phone
+          <input type="tel" name="ownerPhone" placeholder="Mobile number" required>
+        </label>
+        <label>
+          Property type
+          <select name="propertyType" required>
+            <option value="">Select type</option>
+            <option>Hostel</option>
+            <option>PG</option>
+            <option>Flat</option>
+          </select>
+        </label>
+        <label>
+          Starting rent
+          <input type="text" name="startingRent" placeholder="Example: Rs 6,500/month" required>
+        </label>
+        <label class="full">
+          Amenities
+          <textarea name="amenities" placeholder="Wi-Fi, food, AC rooms, laundry, security, parking..." rows="4"></textarea>
+        </label>
+        <button class="primary-btn full" type="submit">List My Property</button>
+        <p class="form-message" id="ownerMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Start local, grow fast</p>
+        <h2>Ready to launch near your college?</h2>
+        <p>Use this site as your first public page. Replace the phone number, listings and college name with your real details.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="primary-btn" href="tel:+919999999999">Call Now</a>
+        <a class="secondary-btn dark" href="https://wa.me/919999999999" target="_blank" rel="noreferrer">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>CampusNest</span>
+    <span>Verified campus accommodation marketplace</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
