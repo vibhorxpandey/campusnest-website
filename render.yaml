@@ -2,7 +2,10 @@ services:
   - type: web
     name: campusnest-website
     env: node
+    repo: https://github.com/vibhorxpandey/campusnest-website
+    branch: main
     plan: free
     buildCommand: "npm install"
     startCommand: "npm start"
-    autoDeploy: true
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit

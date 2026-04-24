@@ -33,6 +33,8 @@ http://localhost:3000
 
 ## Deploy On Render
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vibhorxpandey/campusnest-website)
+
 1. Push this folder to a GitHub repository.
 2. Open Render and create a new Web Service from the repository.
 3. Render will use `render.yaml`.
