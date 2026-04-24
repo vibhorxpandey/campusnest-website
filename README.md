@@ -1,4 +1,4 @@
-# veilHostel Website
+# veil hostel Website
 
 Website and backend for a student accommodation marketplace connecting students with hostels, PGs and flats.
 
@@ -14,7 +14,7 @@ Website and backend for a student accommodation marketplace connecting students 
 
 ## Edit First
 
-1. Update `veilHostel` if you change the brand name later.
+1. Update `veil hostel` if you change the brand name later.
 2. Update phone number `9473735218` if your contact number changes.
 3. Replace sample listings in `script.js` with real hostel, PG and flat data.
 4. Run the backend before testing the forms.

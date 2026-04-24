@@ -1,7 +1,7 @@
 {
   "name": "veilhostel-website",
   "version": "1.0.0",
-  "description": "veilHostel student accommodation marketplace website with a Node backend.",
+  "description": "veil hostel student accommodation marketplace website with a Node backend.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

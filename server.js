@@ -125,7 +125,7 @@ function validateOwnerLead(payload) {
 
 async function handleApi(req, res) {
   if (req.method === "GET" && req.url === "/api/health") {
-    return sendJson(res, 200, { ok: true, service: "veilHostel API" });
+    return sendJson(res, 200, { ok: true, service: "veil hostel API" });
   }
 
   if (req.method === "POST" && req.url === "/api/student-leads") {
@@ -190,6 +190,6 @@ async function handleRequest(req, res) {
 
 ensureDataFiles().then(() => {
   http.createServer(handleRequest).listen(PORT, HOST, () => {
-    console.log(`veilHostel running at http://localhost:${PORT}`);
+    console.log(`veil hostel running at http://localhost:${PORT}`);
   });
 });
