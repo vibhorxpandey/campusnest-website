@@ -7,7 +7,7 @@ const listings = [
     description: "Triple and double sharing rooms with daily meals, Wi-Fi and study-friendly rules.",
     amenities: ["Food", "Wi-Fi", "Laundry", "Security"],
     image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=900&q=80",
-    phone: "+919999999999"
+    phone: "+919473735218"
   },
   {
     name: "Aarav Premium PG",
@@ -17,7 +17,7 @@ const listings = [
     description: "Clean furnished PG with AC options, attached washrooms and flexible meal plans.",
     amenities: ["AC option", "Meals", "Housekeeping", "CCTV"],
     image: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=900&q=80",
-    phone: "+919999999999"
+    phone: "+919473735218"
   },
   {
     name: "College Road 2BHK Flat",
@@ -27,7 +27,7 @@ const listings = [
     description: "Student-friendly flat for groups with kitchen, balcony and negotiable rent.",
     amenities: ["Kitchen", "Balcony", "Parking", "Negotiable"],
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    phone: "+919999999999"
+    phone: "+919473735218"
   },
   {
     name: "Sunrise Girls Hostel",
@@ -37,7 +37,7 @@ const listings = [
     description: "Secure girls hostel with biometric entry, home-style food and peaceful rooms.",
     amenities: ["Food", "Biometric", "Wi-Fi", "Warden"],
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
-    phone: "+919999999999"
+    phone: "+919473735218"
   },
   {
     name: "Metro Student PG",
@@ -47,7 +47,7 @@ const listings = [
     description: "Budget PG with shared rooms, filtered water and quick transport access.",
     amenities: ["Budget", "RO Water", "Transport", "Wi-Fi"],
     image: "https://images.unsplash.com/photo-1560448075-bb485b067938?auto=format&fit=crop&w=900&q=80",
-    phone: "+919999999999"
+    phone: "+919473735218"
   },
   {
     name: "North Gate Studio Flat",
@@ -57,7 +57,7 @@ const listings = [
     description: "Independent studio with private kitchen setup and owner open to student tenants.",
     amenities: ["Private", "Kitchen", "Furnished", "Near gate"],
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80",
-    phone: "+919999999999"
+    phone: "+919473735218"
   }
 ];
 

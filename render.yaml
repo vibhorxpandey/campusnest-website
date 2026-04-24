@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: campusnest-website
+    name: veilhostel
     env: node
     repo: https://github.com/vibhorxpandey/campusnest-website
     branch: main
